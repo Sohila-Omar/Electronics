@@ -10,4 +10,10 @@ import { RouterModule } from '@angular/router';
 })
 export class NavbarComponent {
 
+  searchEmployeeByName($event:Event){
+    const input =$event.target as HTMLInputElement;
+    
+    console.log(input.value);
+    
+  }
 }

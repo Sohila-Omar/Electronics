@@ -1,0 +1,29 @@
+
+@for (item of Schemas; track $index) {
+        <div class="card">
+     
+       <app-product-card [dynamicProduct]="item"></app-product-card>
+
+        </div>
+    }  @empty {
+        <h1>No Product</h1>
+    }
+
+ 
+    <!-- <div class="card"  style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+    
+    
+        <div class="card-body">
+          <h3 class="card-title"> Name</h3>
+          <h3 class="card-title"> Price</h3>
+          <p class="card-text">description</p>
+          
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+    
+    
+      </div>
+      -->
+ 
+

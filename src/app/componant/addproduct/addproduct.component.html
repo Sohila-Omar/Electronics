@@ -1,0 +1,38 @@
+
+<form (ngsubmit)="addproduct(formRef)" #formRef="ngForm">
+    <div class="form-group">
+      <label for="title">Title</label>
+    <input  type='string'   class="form-control" id="title"  placeholder="title"  name="title" ngModel>
+      
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Price</label>
+        <input type='number'     class="form-control" id="price" placeholder="price"  name="price"  ngModel>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputPassword1">Description</label>
+        <input   type='string' class="form-control" id="description" placeholder="description" name="description" ngModel>
+      </div>
+
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">CategoryId</label>
+        <input type='number'   class="form-control" id="categoryId" placeholder="categoryId" name="categoryId" ngModel>
+      </div>
+
+
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Images</label>
+        <input type='string'   class="form-control" id="images" placeholder="images" name="images" ngModel>
+      </div>
+  
+  
+  
+
+   
+
+    <button [disabled]="formRef.invalid" type="submit" class="btn btn-primary">Submit</button>
+  </form>
